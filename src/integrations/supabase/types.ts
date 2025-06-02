@@ -9,7 +9,66 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      [_ in never]: never
+      AgroAI: {
+        Row: {
+          acuracia_modelo_perc: number | null
+          classificao_produto: string | null
+          preco_atual_abr: number | null
+          preco_atual_fev: number | null
+          preco_atual_jan: number | null
+          preco_atual_mai: number | null
+          preco_atual_mar: number | null
+          previsao_abr: number | null
+          previsao_fev: number | null
+          previsao_jan: number | null
+          previsao_jun: number | null
+          previsao_mai: number | null
+          previsao_mar: number | null
+          previsao_max_jun: number | null
+          previsao_min_jun: number | null
+          produto: string | null
+          uf: string | null
+        }
+        Insert: {
+          acuracia_modelo_perc?: number | null
+          classificao_produto?: string | null
+          preco_atual_abr?: number | null
+          preco_atual_fev?: number | null
+          preco_atual_jan?: number | null
+          preco_atual_mai?: number | null
+          preco_atual_mar?: number | null
+          previsao_abr?: number | null
+          previsao_fev?: number | null
+          previsao_jan?: number | null
+          previsao_jun?: number | null
+          previsao_mai?: number | null
+          previsao_mar?: number | null
+          previsao_max_jun?: number | null
+          previsao_min_jun?: number | null
+          produto?: string | null
+          uf?: string | null
+        }
+        Update: {
+          acuracia_modelo_perc?: number | null
+          classificao_produto?: string | null
+          preco_atual_abr?: number | null
+          preco_atual_fev?: number | null
+          preco_atual_jan?: number | null
+          preco_atual_mai?: number | null
+          preco_atual_mar?: number | null
+          previsao_abr?: number | null
+          previsao_fev?: number | null
+          previsao_jan?: number | null
+          previsao_jun?: number | null
+          previsao_mai?: number | null
+          previsao_mar?: number | null
+          previsao_max_jun?: number | null
+          previsao_min_jun?: number | null
+          produto?: string | null
+          uf?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
